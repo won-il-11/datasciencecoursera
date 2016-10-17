@@ -27,6 +27,7 @@
  
 >## In run_analysis.R,
  
+ #### using data created by R Code Book.R,
 - data handling steps following instruction.
  - STEP 1. merge test set and training set
  - STEP 2. Extracts only the measurements on the mean and standard deviation for each measurement.
