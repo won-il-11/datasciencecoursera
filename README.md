@@ -11,14 +11,14 @@
  
 >## in R Code Book.R, 
  
-- data description
-	-data set made with script run
-	-changing variable name
-	-changed variable list		
--downloading files
--read data
--manipulate activities(y_test/train)
--merge/save data
+*data description
+*data set made with script run
+*changing variable name
+*changed variable list		
+*downloading files
+*read data
+*manipulate activities(y_test/train)
+*merge/save data
  
 --extra content
 --dealing with Inertial Signals
