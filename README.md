@@ -1,4 +1,4 @@
-# Hello. I wrote so long script. please be patient...kk
+# Hello. Thanks for visiting. I wrote so long script. please be patient...kk
 
 > 3 files are here.
 ** readme.md, R Code Book.R, run_analysis.R + additional txt file (by_id_act)
