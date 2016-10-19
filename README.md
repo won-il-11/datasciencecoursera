@@ -20,12 +20,11 @@
  
  
 >## In run_analysis.R,
- 
-#### using data created by R Code Book.R,
+#### There are several pre-steps
 
 - get data using url.
 - make seperated data set as a whole data.
-- change y value readable.
+
 
 #### and then,
 
