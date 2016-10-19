@@ -56,20 +56,9 @@ names(x_train) <- variable_explain[,1]
 names(x_test) <- variable_explain[,1]
 
 # all column has its name now. However, this name is not enought to understand, so
-#need more process. I'm so sad I have no idea to deal with it. I will do it later
-#after variable reduction. (in run_analysis.R, STEP 2 & 4)
+# need more process. I will do it later after variable reduction. (in run_analysis.R, STEP 2 & 4)
 
 
-
-x <- as.character(1:6)
-y <- c("walk","walk_upstairs","walk_donwstairs","sit","stand","lay")
-
-for (i in 1:6) {
-      y_train$action <- str_replace_all(y_train$action,x[i],y[i])
-      y_test$action <- str_replace_all(y_test$action,x[i],y[i])
-}
-#y_test was numeric, so alter to string directly meaning the action
-# 1: walk 2: walk_upstairs 3: walk_donwstairs 4: sit 5: stand 6: lay
 
 
 train_set <- data.table(subject_train, y_train, x_train)
@@ -119,9 +108,22 @@ data <- origin_data[, c(1,2,idx,idx2), with = FALSE]
 
 #STEP 3. Uses descriptive activity names to name the activities in the data set
 
+#rather than using simple function, I choosed to use loop.
+
+x <- as.character(1:6)
+y <- c("walk","walk_upstairs","walk_donwstairs","sit","stand","lay")
+
+for (i in 1:6) {
+      origin_data$action <- str_replace_all(origin_data$action,x[i],y[i])
+}
+#it was numeric, so alter to string directly meaning the action
+# 1: walk 2: walk_upstairs 3: walk_donwstairs 4: sit 5: stand 6: lay
+
+
+
 unique(data$action)
-#already set acitiviy names when loading data. (on R Code Book.R, line 102. )
 #1: walk 2: walk_upstairs 3: walk_donwstairs 4: sit 5: stand 6: lay
+# check if applied :)
 
 
 
